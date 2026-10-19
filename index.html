@@ -1,0 +1,95 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Demo</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --panel: #111827;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, var(--bg), #1e293b);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .card {
+        width: min(90vw, 420px);
+        background: rgba(17, 24, 39, 0.9);
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        border-radius: 16px;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        margin: 0 0 0.75rem;
+        font-size: 2.2rem;
+      }
+
+      p {
+        margin: 0 0 1.5rem;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      button {
+        border: none;
+        border-radius: 999px;
+        padding: 0.9rem 1.5rem;
+        background: var(--accent);
+        color: #082f49;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 12px 24px rgba(56, 189, 248, 0.35);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Hello!</h1>
+      <p>This is a simple HTML page created in the Git demo project.</p>
+      <button id="demoButton" type="button">Click me</button>
+    </main>
+
+    <script>
+      const demoButton = document.getElementById('demoButton');
+
+      demoButton.addEventListener('click', () => {
+        const heading = document.querySelector('h1');
+        heading.textContent = 'Hello, Git!';
+        demoButton.textContent = 'Clicked!';
+        demoButton.disabled = true;
+      });
+    </script>
+  </body>
+</html>
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
